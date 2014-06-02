@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.cnu.eslab.suite"
+      android:versionCode="1"
+      android:versionName="1.0">
+
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".TrainingSuites"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+	//cpu training suite 서비스를 등록해 준다.
+	<service android:name="com.cnu.eslab.service.CpuTrainingService">
+		<intent-filter>
+			<action android:name="com.cnu.eslab.suite" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+	</service>
+	//wifi training suite 서비스를 등록해 준다.
+	<service android:name="com.cnu.eslab.service.WiFiTrainingService">
+		<intent-filter>
+			<action android:name="com.cnu.eslab.suite" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+	</service>
+	//led training suite 서비스를 등록해 준다.
+	<service android:name="com.cnu.eslab.service.DisplayTrainingService">
+		<intent-filter>
+			<action android:name="com.cnu.eslab.suite" />
+			<category android:name="android.intent.category.DEFAULT" />
+		</intent-filter>
+	</service>
+	
+	<activity android:name=".preferences.Preferences" android:label="Preferences" />
+	<activity android:name=".SaveInformationActivity" android:label="Preferences" />
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> //Wake Lock에 대한 권한이다.
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" /> // Display Brightness를 설정하기 위한 허가 옵션 이다. 
+    
+</manifest>

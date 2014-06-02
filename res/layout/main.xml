@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<TextView android:layout_width="fill_parent"
+			  android:id="@+id/print_text"
+			  android:layout_height="wrap_content" 
+			  android:text="@string/introduce" />
+	<EditText android:layout_width="match_parent" 
+			  android:id="@+id/setting_value_edittext"
+			  android:text="" 
+			  android:layout_height="wrap_content">
+	</EditText>
+		
+	<LinearLayout 	android:id="@+id/linearLayout1"
+				 	android:layout_width="match_parent" 
+					android:layout_height="wrap_content">
+			<Button android:layout_width="wrap_content" 
+					android:id="@+id/led_service_startbtn"
+					android:text="Display Start" 
+					android:layout_height="wrap_content">
+			</Button>
+			<Button android:layout_width="wrap_content" 
+					android:id="@+id/led_service_stoptbtn"
+					android:text="Display Stop" 
+					android:layout_height="wrap_content">
+			</Button>
+			<Button android:layout_width="wrap_content" 
+					android:id="@+id/led_service_initbtn"
+					android:text="Display init" 
+					android:layout_height="wrap_content">
+			</Button>
+	</LinearLayout>
+	<LinearLayout 	android:id="@+id/linearLayout2"
+				 	 android:layout_width="match_parent" 
+					  android:layout_height="wrap_content">
+					<Button android:layout_width="wrap_content" 
+					android:id="@+id/service_start_btn"
+					android:text="CPU Start" 
+					android:layout_height="wrap_content">
+					</Button>
+					<Button android:layout_width="wrap_content" 
+					android:id="@+id/service_Stop_btn"
+					android:text="CPU Stop" 
+					android:layout_height="wrap_content">
+					</Button>
+	</LinearLayout>
+	<LinearLayout 	android:id="@+id/linearLayout3"
+				 	 android:layout_width="match_parent" 
+					  android:layout_height="wrap_content">
+					<Button android:layout_width="wrap_content" 
+					android:id="@+id/wifi_training_start_btn"
+					android:text="WIFI Start" 
+					android:layout_height="wrap_content">
+					</Button>
+					<Button android:layout_width="wrap_content" 
+					android:id="@+id/wifi_training_stop_btn"
+					android:text="WIFI Stop" 
+					android:layout_height="wrap_content">
+					</Button>
+	</LinearLayout>
+</LinearLayout>

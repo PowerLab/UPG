@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <PreferenceCategory
+	android:title="cpu">
+  <EditTextPreference
+  	android:key="cpu_intervanl_time_preference"
+  	android:title="Interval"
+  	android:summary="changing cpu workload interval corresponding to update rate of battery level indicator"
+  	android:defaultValue="1000"
+  />
+  <CheckBoxPreference android:defaultValue="false" 
+						android:key="cpu_max_mode" 
+						android:title="Don't change" 
+						android:summary="fixed cpu usage mode on/off">
+  </CheckBoxPreference>
+	
+   </PreferenceCategory>
+    <PreferenceCategory
+	android:title="wifi">
+    <EditTextPreference
+  	android:key="wifi_start_time_preference"
+  	android:title="Period"
+  	android:summary="packet sending period"
+  	android:defaultValue="100"
+    />
+    <EditTextPreference
+  	android:key="wifi_intervanl_time_preference"
+  	android:title="Interval"
+  	android:summary="changing period interval corresponding to update rate of battery level indicator"
+  	android:defaultValue="10"
+    />
+   <CheckBoxPreference android:defaultValue="false" 
+						android:key="wifi_packet_mode_fixed" 
+						android:title="Don't change" 
+						android:summary="fixed packet rate mode on/off">
+  </CheckBoxPreference>   
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+	android:title="display">
+  <EditTextPreference
+  	android:key="display_starting_brightness"
+  	android:title="Brightness"
+  	android:summary="Brightness Level"
+  	android:defaultValue="255"
+  />
+   <EditTextPreference
+  	android:key="display_brightness_Interval"
+  	android:title="Interval"
+  	android:summary="changing brightness interval corresponding to update rate of battery level indicator"
+  	android:defaultValue="10"
+  />
+   </PreferenceCategory>
+</PreferenceScreen>

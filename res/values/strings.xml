@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="introduce">Usage pattern generator: 1.0</string>
+    <string name="app_name">UPG</string>
+    <string name="app_title">Usage pattern generator 1.0</string>
+	<string name="bar_title">UPG Running</string>
+	<string name="notify_text">Running in background</string>
+	<string name="options_text">Options</string>
+	<string name="db_text">DB open</string>
+	
+
+	<string name="cpu_training_text">Generating cpu pattern</string>
+	<string name="led_training_text">Generating  led pattern</string>
+</resources>
